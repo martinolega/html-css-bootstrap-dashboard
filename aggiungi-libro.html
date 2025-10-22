@@ -51,11 +51,83 @@
     </header>
 
     <main class="py-5">
-        <div class="container py-5">
-            <h1>Nuovo libro</h1>
+        <div class="py-5">
 
             <!-- Form -->
-            
+            <form class="container">
+
+                <h1 class="fs-2 mb-3">Nuovo libro</h1>
+
+                <!-- Nome e cognome -->
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="nome-autore">Nome Autore</label>
+                        <input type="text" class="form-control" id="nome-autore"
+                            placeholder="Inserisci il nome dell'autore" required>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="cognome-autore">Cognome Autore</label>
+                        <input type="text" class="form-control" id="cognome-autore"
+                            placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+
+                <!-- Titolo -->
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <label for="titolo">Titolo</label>
+                        <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro"
+                            required>
+                    </div>
+                </div>
+
+                <p class="mb-3 text-body-secondary">
+                    Titolo versione italiana
+                </p>
+
+                <!-- Genere, Anno di Pubblicazione e ISBN# -->
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="Genere">Genere</label>
+                        <select class="form-select" id="genere" required>
+                            <option selected>Scegli il genere</option>
+                            <option>Giallo</option>
+                            <option>Avventura</option>
+                            <option>Giallo</option>
+                            <option>Romantico</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="anno-pubblicazione">Anno di Pubblicazione</label>
+                        <input type="text" class="form-control" id="anno-pubblicazione" placeholder="Inserisci l'anno"
+                            required>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="isbn">ISBN#</label>
+                        <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#"
+                            required>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Text Area -->
+                <label for="note">Note</label>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="note"
+                        style="height: 100px"></textarea>
+                    <label for="note">Inserisci eventuali note sul libro</label>
+                </div>
+
+                <!-- Digitale -->
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="digitale">
+                    <label class="form-check-label" for="digitale">Disponibile anche in digitale</label>
+                </div>
+
+                <!-- Aggiungi Libro -->
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </form>
 
 
 
